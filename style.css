@@ -1,0 +1,136 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-image: url(./images/bg-pattern-bottom-desktop.svg);
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.2rem;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin-bottom: 60px;
+}
+
+.hero {
+  display: flex;
+  margin-bottom: 40px;
+  color: hsl(300, 43%, 22%);
+  gap: 6rem;
+}
+.hero h1 {
+  line-height: 3rem;
+  font-size: 3rem;
+  margin: 0;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20%;
+}
+.intro p {
+  color: hsl(303, 10%, 58%);
+}
+.ratings {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 15px 0px;
+}
+.stars {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  display: flex;
+}
+.s1 {
+  margin-left: -50%;
+  margin-right: 20%;
+}
+.s2 {
+  margin-left: -30%;
+}
+.s3 {
+  margin-left: -5%;
+  margin-right: -20%;
+}
+
+.reviews {
+  display: flex;
+  gap: 25px;
+}
+
+.box {
+  background-color: #502050;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+.b2 {
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+.b3 {
+  margin-top: 40px;
+  margin-bottom: -40px;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media (max-width: 782px) {
+  body {
+    background-image: url(./images/bg-pattern-bottom-mobile.svg);
+    background-size: contain;
+    height: auto;
+    width: auto;
+    padding: 80px 15px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    margin-bottom: 5rem;
+  }
+  .intro {
+    gap: 20px;
+  }
+  .stars {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro,
+  figure,
+  .stars > p,
+  .s1,
+  .s2,
+  .s3 {
+    margin: 0px;
+  }
+}
